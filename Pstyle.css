@@ -1,0 +1,482 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: linear-gradient(#990000 , #ffe6e6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+/*...........................Navigation bar complete styling here............................*/
+nav{
+ background: #ff6666;
+ height: 80px; 
+ width: 100%;
+ z-index: 1;
+ position: fixed;
+ top: 0;
+ left: 0;
+}
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  float: right;
+  margin-right: 20px;
+}
+
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 4px;
+  
+}
+
+a.active, a:hover{
+  background: #ffcc99;
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 75%;
+    height: 722px;
+    background: #ffcc99;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .25s;
+  }
+  .navbar nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color: #fff;
+  }
+  #check:checked ~ul{
+    left: 0;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+  }
+}
+
+
+/*...........................Complete end of Navigation bar styling............................*/
+
+
+
+
+/*................................Hero image and text on it..........................*/
+
+.hero-image {
+  background-image: linear-gradient(rgba(75, 0, 20, 0.6), rgba(75, 0, 20, 0.6)), 
+  url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxzZWFyY2h8MXx8cmVzdGF1cmFudHx8MHx8fA&ixlib=rb-1.2.1&q=80&w=1080");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 20px 20px 20px #b7b7b7;
+}
+
+.hero-text {
+  font-family: 'Tangerine', serif;
+  text-shadow: 4px 4px 4px #aaa;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  animation: animate 0.6s ease-in-out infinite alternate ;
+}
+@keyframes animate{
+  from{
+     text-shadow: 0 0 20px #ffffff;
+  }
+  to{
+    text-shadow: 0 0 50px #ffffff,
+                0 0 10px #ffffff;
+  }
+}
+
+.hero-text button {
+  border: 5px solid #800000;
+  outline: 0;
+  display: inline-block;
+  padding: 30px 45px;
+  color: black;
+  border-radius: 10px;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 1s ;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/*....... hero section styling ends here let's move to services card's styling......*/
+
+
+
+
+/*.................................column and row class styling here...........................*/
+
+/* Float four columns side by side */
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 25px;
+  background-color: #ffcc66;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+
+.row {margin: 0 -5px;
+  background-color: #ff6666
+}
+/*
+.container{padding-top:50px;position: relative; overflow: hidden;}
+.container .customers .fa{color:#EF522B;padding:0 12px 0 12px;}
+.container .col-md-12 h4{color:#ED532C;font-weight:600;}
+.container p{color:#fff; font-size: 1.5em;}
+.container .customers .fa{padding:0;}
+.container{width:100%;}*/
+
+/* Responsive columns */
+
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/*from column class styling upto this comment the logic of CSS 
+will be used same for my services cards and stats counter stuff*/
+
+/* Style the counter cards */
+
+/*.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background: linear-gradient(#cc5200 , #ffeb99);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+*/
+/*MY Extra Wala Code*/
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 25px;
+  background-color: #990000;
+}
+.row {margin: 0 -5px;
+  background: linear-gradient(#ff6633,#ffece6) ;
+}
+@media screen and (max-width: 768px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card{
+  width: 500px;
+  height: 500px;
+  background: ;
+  position: relative;
+  left: 10%;
+  top: 10%
+  transform: translate(-50%,-50%);
+  perspective: 1000px;
+
+}
+
+.cover{
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  left: 40px;
+  background-color: #ff6666;
+  transform: rotateY(-20deg);
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: all .5s ease-in;
+}
+.card:hover .cover{
+  transform: rotateY(-180deg);
+}
+figure{
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+ 
+}
+figure.front{
+  
+
+}
+figure.back{
+  background: linear-gradient(#660033,#ffe6f2);
+  transform: rotateY(180deg);
+}
+
+/*ENDED HERE*/
+
+/*/ start count stats /*/
+/*
+section#counter-stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.stats {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+} 
+
+.stats .fa {
+  color: #0ec78f;
+  font-size: 60px;
+}
+*/
+/*/ end count stats /*/
+.Menu-Text{
+  font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+  
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+}
+.MT{
+  font: 400 100px/1.3 'Arizonia', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+}
+
+
+
+
+
+/*.............................Complete styling of the testimonial section................................*/
+
+.test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2px;
+
+}
+
+.container .box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  margin: 20px;
+  background: #121e27;
+}
+
+.container .box .content{
+  padding: 30px;
+  text-align: center;
+}
+
+.container .box .content p{
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container .box .content .user{
+  max-width: 72px;
+  border-radius: 50%;
+}
+.container .box .content h3{
+  color: #33d1a0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+
+}
+
+@media (max-width: 1050px){
+  .container
+  {
+    justify-content: center;
+  }
+
+}
+@media (max-width: 768px){
+  .container .box
+  {
+width: 100%;
+height: auto;
+padding: 30px 20px;
+  }
+
+}
+.box{
+   border-radius: 10px;
+}
+
+
+/*......Done with testimonial styling here let's move to footer and wrap up the website......*/
+
+
+
+
+/*.................................Styling of the Footer section................................*/
+
+
+.socials a{
+  border: 1px #f00;
+  width: 55px;
+  height: 60px;
+  padding-top: 5px;
+  margin-right: 5px;
+  font-size: 25px;
+  border-radius: 6px;
+  display: inline-block;
+  color: #fff;
+}
+.links ul a{
+  margin-top: 10px;
+  padding-top: 100px;
+  color: #fff;
+}
+
+
+.column1 {
+  float: left;
+  width: 33%;
+  padding: 0 25px;
+  font-family: 'Cookie', cursive;
+}
+.column1 button{
+  border: 3px solid #000;
+  outline: 0;
+  display: inline-block;
+  padding: 5px 15px;
+  color: black;
+  border-radius: 5px;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.5s ;
+}
+.column1 button:hover {
+  background-color: #00cc99;
+  color: #99ffe6;
+}
+
+/* Responsive column1 */
+
+@media screen and (max-width: 750px) {
+  .column1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/*.......................Ohh man finally done, huh!!!!!!!...........................*/
+
