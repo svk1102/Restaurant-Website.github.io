@@ -169,7 +169,7 @@ a.active, a:hover{
   color: white;
 }
 
-/*....... hero section styling ends here let's move to services card's styling......*/
+/*....... hero section styling ends ......*/
 
 
 
@@ -220,23 +220,8 @@ a.active, a:hover{
 }
 
 
-/*from column class styling upto this comment the logic of CSS 
-will be used same for my services cards and stats counter stuff*/
 
-/* Style the counter cards */
 
-/*.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background: linear-gradient(#cc5200 , #ffeb99);
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-}
-*/
-/*MY Extra Wala Code*/
 .column {
   float: left;
   width: 20%;
@@ -304,29 +289,9 @@ figure.back{
   transform: rotateY(180deg);
 }
 
-/*ENDED HERE*/
+/*Test ENDED HERE*/
 
-/*/ start count stats /*/
-/*
-section#counter-stats {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
 
-.stats {
-  text-align: center;
-  font-size: 55px;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-} 
-
-.stats .fa {
-  color: #0ec78f;
-  font-size: 60px;
-}
-*/
-/*/ end count stats /*/
 .Menu-Text{
   font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
   
@@ -343,7 +308,6 @@ section#counter-stats {
 
 
 
-/*.............................Complete styling of the testimonial section................................*/
 
 .test{
   display: flex;
@@ -418,12 +382,12 @@ padding: 30px 20px;
 }
 
 
-/*......Done with testimonial styling here let's move to footer and wrap up the website......*/
 
 
 
 
-/*.................................Styling of the Footer section................................*/
+
+/*................................. Footer section................................*/
 
 
 .socials a{
@@ -478,5 +442,5 @@ padding: 30px 20px;
   }
 }
 
-/*.......................Ohh man finally done, huh!!!!!!!...........................*/
+/*.......................The End...........................*/
 
