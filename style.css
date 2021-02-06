@@ -2,10 +2,10 @@ body, html {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
-  background: linear-gradient(#990000 , #ffe6e6);
+  background: linear-gradient(#faed26 , #46344e);
 }
 
-* {
+ {
   box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@ body, html {
 
 /*...........................Navigation bar complete styling here............................*/
 nav{
- background: #ff6666;
+ background: black;
  height: 80px; 
  width: 100%;
  z-index: 1;
@@ -32,12 +32,25 @@ nav ul{
   float: right;
   margin-right: 20px;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header h2{
+  color: yellow;
+  font-family: 'Tangerine', serif;
+  font-weight: 700;
+}
+header h2 span{
+  color: red;
+  text-shadow: 0 0 5px rgba(0,0,0,1);
+}
 
 
 nav ul li{
   display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
+  margin: 0 5px; 
 }
 
 nav ul li a{
@@ -47,6 +60,7 @@ nav ul li a{
   border-radius: 4px;
   
 }
+
 
 a.active, a:hover{
   background: #ffcc99;
@@ -110,7 +124,6 @@ a.active, a:hover{
   }
 }
 
-
 /*...........................Complete end of Navigation bar styling............................*/
 
 
@@ -142,7 +155,7 @@ a.active, a:hover{
 }
 @keyframes animate{
   from{
-     text-shadow: 0 0 20px #ffffff;
+     text-shadow: 0 0 20px #000;
   }
   to{
     text-shadow: 0 0 50px #ffffff,
@@ -224,12 +237,12 @@ a.active, a:hover{
 
 .column {
   float: left;
-  width: 20%;
+  width: 50%;
   padding: 0 25px;
-  background-color: #990000;
+  background-color: #46344e;
 }
 .row {margin: 0 -5px;
-  background: linear-gradient(#ff6633,#ffece6) ;
+  background: linear-gradient(#9d8d8f,#46344e) ;
 }
 @media screen and (max-width: 768px) {
   .column {
@@ -262,7 +275,7 @@ a.active, a:hover{
   height: 100%;
   position: absolute;
   left: 40px;
-  background-color: #ff6666;
+  background-color: #ffc266;
   transform: rotateY(-20deg);
   transform-style: preserve-3d;
   transform-origin: left;
@@ -285,10 +298,9 @@ figure.front{
 
 }
 figure.back{
-  background: linear-gradient(#660033,#ffe6f2);
+  background: linear-gradient(#9d8d8f,#9b766f);
   transform: rotateY(180deg);
 }
-
 /*Test ENDED HERE*/
 
 
@@ -401,11 +413,7 @@ padding: 30px 20px;
   display: inline-block;
   color: #fff;
 }
-.links ul a{
-  margin-top: 10px;
-  padding-top: 100px;
-  color: #fff;
-}
+
 
 
 .column1 {
@@ -418,18 +426,29 @@ padding: 30px 20px;
   border: 3px solid #000;
   outline: 0;
   display: inline-block;
-  padding: 5px 15px;
+  padding: 3px 10px;
   color: black;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 7px;
   transition: 0.5s ;
 }
 .column1 button:hover {
-  background-color: #00cc99;
+  background-color: #000;
   color: #99ffe6;
+}
+
+.column1 input{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-top: 5px;
+  border: none;
+  font-size: 20px;
+ font-family: 'Montserrat', sans-serif;
+ background: linear-gradient(#9d8d8f,#46344e);
 }
 
 /* Responsive column1 */
