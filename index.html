@@ -1,181 +1,233 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--Google font links-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<!--All 3 fonts link below-->
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' >
-<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!--Google font links-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!--All 3 fonts link below-->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 
 
-<!--font-awesome icons link-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
+  <!--font-awesome icons link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
-<!--Linking CSS file with html-->
-<link rel="stylesheet"  href="style.css">
+  <!--Linking CSS file with html-->
+  <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-<!--............................ Start of our Navbar................................-->
+  <!--............................ Start of our Navbar................................-->
 
-<div style="font-family: 'Lora', serif ;" class="navbar">
-<nav>
-  <input type="checkbox" id="check">
-  <label for="check" class="checkbtn">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </label>
-  <header>
-  <h2 style="font-size: 80px"><span>E</span>thenic M<span>aharaja</span></h2>
-  <ul class="navul">
-    <li><a class="active" href="#top">HOME</a></li>
-    <li><a href="#service">MENU</a></li>
-    <li><a href="#feedback">FEEDBACK</a></li>
-    <li><a href="#contact">CONTACT US</a></li>
-    
-</ul>
-</header>
-  
-</nav>
-</div>
+  <div style="font-family: 'Lora', serif ;" class="navbar">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+      <header>
+        <h2 style="font-size: 80px"><span>E</span>thenic M<span>aharaja</span></h2>
+        <ul class="navul">
+          <li><a class="active" href="#top">HOME</a></li>
+          <li><a href="#service">MENU</a></li>
+          <li><a href="#feedback">FEEDBACK</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
 
-<!--.............................End of the navigation Section....................................-->
+        </ul>
+      </header>
 
-
-
-<!--Hero Image-->
-
-<div id="top" class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:175px;margin-top: 100px;">Ethnic Maharaja</h1>
-    <h3 class="free" style="color: #ffcc99;font-size:75px">Life's too short for boring food....</h3>
-    <button><h1 style="font-size:50px;">Order Now !</h1></button>
-    <button><h1 style="font-size:50px;">Book Tables</button>
-  </div>
-</div>
-
-<br><br><br>
-
-<!--End of Hero Image-->
-
-
-<!--.................................... Menu Cards.....................................-->
-
-<center><div class="Menu-Text"><h1 id="service" style="font-size:75px">Choose Here</h1></div></center>
-
-<div class="MT">
-<div class="row">
-    <div class="column">
-       <div class="card"><center><h3 >South Indian</h3><hr  style="background-color: #ccc;"  width="50%;"></hr></center>
-        <p style="font-size:30px">..1..Idli Sambar<br>..2..Wada Sambar<br>..3..Dal Vada<br>..4..Plane Dosa<br>..5..Masala Dosa<br>..6..Mysore Masala Dosa<br>..7..Onion Plain Dosa<br>..8..Plain Uttapam<br>..9..Onion Uttapam<br>..10Curd Rice</p>
-       <div class="cover">
-        <figure class="front">
-          <img src="https://static-r1.asianetnews.com/images/01d7v32trpgnee6wrycek5r70b/breakfast_710x400xt.jpg" width="100%"> <center><h3 style="font-size:40px">South Indian</h3><hr style="background-color: #ccc;" width="50%;"></hr></center>
-        </figure>
-        <figure class="back">
-        </figure>
-       </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="card"><center><h3 >North Indian</h3><hr  style="background-color: #ccc;"  width="50%;"></hr></center>
-        <p style="font-size: 30px">..1..Chole Bature<br>..2..Aloo Tikki<br>..3..Veg Biryani<br>..4..Rajma Chawal<br>..5..Shahi Paneer<br>..6..Kachori<br>..7..Masala Papad<br>..8..Butter Nan<br>..9..Dal Bati<br>..10 Pav Bhaji</p>
-       <div class="cover">
-        <figure class="front">
-          <img src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/styles/1200x706/public/content6079.jpg?itok=wM692drs" width="100%">
-      <center><h3 style="font-size:40px">North Indian</h3><hr  style="background-color: #ccc;"  width="50%;"></hr></center>
-      
-        </figure>
-        <figure class="back">
-        </figure>
-       </div>
-      </div>
-    </div>
-
-  </div>    
+    </nav>
   </div>
 
-
- 
-
-
-
- 
-
-<!--End of Menu cards-->
-
-<!--.................................................................-->
+  <!--.............................End of the navigation Section....................................-->
 
 
 
+  <!--Hero Image-->
+
+  <div id="top" class="hero-image">
+    <div class="hero-text">
+      <p>Ethnic Maharaja</p>
+      <h3 class="free" style="color: #ffcc99;font-size:75px">Life's too short for boring food....</h3>
+      <button>
+        <h1 style="font-size:50px;">Order Now !</h1>
+      </button>
+      <button>
+        <h1 style="font-size:50px;">Book Tables
+      </button>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <!--End of Hero Image-->
+
+
+  <!--.................................... Menu Cards.....................................-->
+
+  <center>
+    <div class="Menu-Text">
+      <h1 id="service" style="font-size:75px">Choose Here</h1>
+    </div>
+  </center>
+
+  <div class="MT">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <center>
+            <h3>South Indian</h3>
+            <hr style="background-color: #ccc;" width="50%;">
+            </hr>
+          </center>
+          <p style="font-size:30px">..1..Idli Sambar<br>..2..Wada Sambar<br>..3..Dal Vada<br>..4..Plane
+            Dosa<br>..5..Masala Dosa<br>..6..Mysore Masala Dosa<br>..7..Onion Plain Dosa<br>..8..Plain
+            Uttapam<br>..9..Onion Uttapam<br>..10Curd Rice</p>
+          <div class="cover">
+            <figure class="front">
+              <img src="https://static-r1.asianetnews.com/images/01d7v32trpgnee6wrycek5r70b/breakfast_710x400xt.jpg"
+                width="100%">
+              <center>
+                <h3 style="font-size:40px">South Indian</h3>
+                <hr style="background-color: #ccc;" width="50%;">
+                </hr>
+              </center>
+            </figure>
+            <figure class="back">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <center>
+            <h3>North Indian</h3>
+            <hr style="background-color: #ccc;" width="50%;">
+            </hr>
+          </center>
+          <p style="font-size: 30px">..1..Chole Bature<br>..2..Aloo Tikki<br>..3..Veg Biryani<br>..4..Rajma
+            Chawal<br>..5..Shahi Paneer<br>..6..Kachori<br>..7..Masala Papad<br>..8..Butter Nan<br>..9..Dal Bati<br>..10
+            Pav Bhaji</p>
+          <div class="cover">
+            <figure class="front">
+              <img
+                src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/styles/1200x706/public/content6079.jpg?itok=wM692drs"
+                width="100%">
+              <center>
+                <h3 style="font-size:40px">North Indian</h3>
+                <hr style="background-color: #ccc;" width="50%;">
+                </hr>
+              </center>
+
+            </figure>
+            <figure class="back">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
 
 
-   
 
-<!--...................... Footer............................-->
 
-<footer style="background-color: #121e27;">
-<div class="row">
+
+
+  <!--End of Menu cards-->
+
+  <!--.................................................................-->
+
+
+
+
+
+
+
+
+
+  <!--...................... Footer............................-->
+
+  <footer style="background-color: #121e27;">
+    <div class="row">
 
       <div class="column1">
-         <div style="text-align: left; padding-top: 50px;" class="footer-section contact">
-      <h1 id="contact" style="color: gold; font-size: 75px">Find Us Here !</h1>
-      <hr style="background-color: #fff;"></hr>
-      <p style="color: #fff; font-size: 18px; font-family: 'Lora', serif ;">
-        <i style="font-size: 35px;" class="fa fa-map-marker" aria-hidden="true"></i>
-        11 , Rupadarshini, Lt Dilip Gupte Marg, Mahim<br>Mumbai - 400022</p>
-      <div style="color: #fff; font-family: 'Lora', serif ; font-size: 18px;" class="contact">
-        <span><i style="font-size: 35px;"  class="fa fa-phone"></i>&nbsp;022-2596335</span>
-        <br><br>
-        <span><i style="font-size: 35px;" class="fa fa-envelope"></i>&nbsp;EthenicM@rediffmail.com</span>
-      </div><br>
-      <div class="socials">
-        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      </div>
-    </div>
+        <div style="text-align: left; padding-top: 50px;" class="footer-section contact">
+          <h1 id="contact" style="color: gold; font-size: 75px">Find Us Here !</h1>
+          <hr style="background-color: #fff;">
+          </hr>
+          <p style="color: #fff; font-size: 18px; font-family: 'Lora', serif ;">
+            <i style="font-size: 35px;" class="fa fa-map-marker" aria-hidden="true"></i>
+            11 , Rupadarshini, Lt Dilip Gupte Marg, Mahim<br>Mumbai - 400022
+          </p>
+          <div style="color: #fff; font-family: 'Lora', serif ; font-size: 18px;" class="contact">
+            <span><i style="font-size: 35px;" class="fa fa-phone"></i>&nbsp;022-2596335</span>
+            <br><br>
+            <span><i style="font-size: 35px;" class="fa fa-envelope"></i>&nbsp;EthenicM@rediffmail.com</span>
+          </div><br>
+          <div class="socials">
+            <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
       </div>
 
       <div class="column1">
         <div style="text-align: left; padding-top: 50px;" class="footer-section links">
-      <h1 style="color: gold; font-size: 75px">Feedback</h1>
-      <hr  style="background-color: #fff;"></hr>
-      <br>
-      <p style="text-align: left; color: #fff; font-size: 30px ; font-family: 'Lora', serif ;">Write your valueable suggestions here..</p>
-      <input type="text" name="feedback" style=" ">
-      <p style="text-align: left; color: #fff; font-size: 20px ; font-family: 'Lora', serif ;">Provide us your Email for daily updates</p>
-      <input type="text" name="feedback"><br>
-      <button><h1 style="font-size:20px;">Submit</button>
-       
-       </div>
+          <h1 style="color: gold; font-size: 75px">Feedback</h1>
+          <hr style="background-color: #fff;">
+          </hr>
+          <br>
+          <p style="text-align: left; color: #fff; font-size: 30px ; font-family: 'Lora', serif ;">Write your valueable
+            suggestions here..</p>
+          <input type="text" name="feedback" style=" ">
+          <p style="text-align: left; color: #fff; font-size: 20px ; font-family: 'Lora', serif ;">Provide us your Email
+            for daily updates</p>
+          <input type="text" name="feedback"><br>
+          <button>
+            <h1 style="font-size:20px;">Submit
+          </button>
+
+        </div>
       </div>
-          
+
       <div class="column1">
         <div style="text-align: left; padding-top: 50px;" class="footer-section about">
-        <h1 style="color: gold; font-size: 75px">From Our Chef..</h1>
-        <hr style="background-color: #fff;"></hr>
-      <p style="text-align: left; color: #fff; font-size: 20px ; font-family: 'Lora', serif ;">
-A recipe has no soul. You as the cook must bring soul to the recipe. Cooking is at once one of the simplest and most gratifying of the arts, but to cook well one must love and respect food. I approach cooking from a science angle because I need to understand how things work. If I understand the egg, I can scramble it better. It’s a simple as that. The discovery of a new dish does more for the happiness of mankind than the discovery of a star.
-</p>
+          <h1 style="color: gold; font-size: 75px">From Our Chef..</h1>
+          <hr style="background-color: #fff;">
+          </hr>
+          <p style="text-align: left; color: #fff; font-size: 20px ; font-family: 'Lora', serif ;">
+            A recipe has no soul. You as the cook must bring soul to the recipe. Cooking is at once one of the simplest
+            and most gratifying of the arts, but to cook well one must love and respect food. I approach cooking from a
+            science angle because I need to understand how things work. If I understand the egg, I can scramble it
+            better. It’s a simple as that. The discovery of a new dish does more for the happiness of mankind than the
+            discovery of a star.
+          </p>
+        </div>
       </div>
+
     </div>
- 
-    </div>
-    <center><h6 style="color: #fff; background-color:#000; font-family: 'Lora', serif ;">&copy; All rights reserved 2020</h6></center><br>
+    <center>
+      <h6 style="color: #fff; background-color:#000; font-family: 'Lora', serif ;">&copy; All rights reserved 2020</h6>
+    </center><br>
   </footer>
 
 </body>
+
 </html>
